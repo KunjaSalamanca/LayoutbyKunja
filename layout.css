@@ -1,23 +1,28 @@
-.borderLine{
+.borderLine {
     border: 1px solid rgb(0, 17, 255);
     margin-top: 10px;
 }
 
-header{
-    
-    width: 100%;
+header, nav, main, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header, footer {
     height: 100px;
 }
 
-main{
-    width:100%;
+nav {
+    height: 50px;
+}
+
+main {
+    flex-grow: 1;
     height: 100vh;
-    float: left;
-    margin-right: 20;
 }
 
-footer{
-    width: 100%;
+footer {
     height: 100px;
-    float: left;
 }
