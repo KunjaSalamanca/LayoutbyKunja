@@ -1,28 +1,33 @@
-.borderLine{
+.borderLine {
     border: 1px solid rgb(0, 17, 255);
     margin-top: 10px;
 }
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+}
 
-header{
-    
-    width: 100%;
+header, nav, footer, aside, section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header, footer {
     height: 100px;
 }
 
-main{
-    width:45%;
-    height: 100vh;
-    float: left;
-    margin-right: 20;
+nav {
+    height: 50px;
 }
-aside{
-    float: left;
-    width: 45%;
+
+aside, section {
+    flex: 1;
+    margin: 10px;
     height: 100vh;
 }
 
-footer{
-    width: 100%;
+footer {
     height: 100px;
-    float: left;
 }
