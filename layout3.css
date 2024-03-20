@@ -1,30 +1,42 @@
-.borderLine{
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.borderLine {
     border: 1px solid rgb(0, 17, 255);
     margin-top: 10px;
 }
 
-header{
-    
-    width: 100%;
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+header, nav, main, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header, footer {
     height: 100px;
 }
 
-main{
-    width: 60%;
-    height: 100vh;
-    float: left;
-    margin-left: 10;
-    margin-right: 10;
+nav {
+    height: 50px;
 }
 
-aside{
-    float: left;
-    width: 20%;
+main {
+    flex-grow: 1;
+}
+
+aside, section {
+    flex: 1;
+    margin: 10px;
     height: 100vh;
 }
 
-footer{
-    width: 100%;
+footer {
     height: 100px;
-    float: left;
 }
